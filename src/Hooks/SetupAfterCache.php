@@ -144,7 +144,7 @@ class SetupAfterCache {
 
 	protected function registerCacheTriggers() {
 		$defaultRecacheTriggers = [
-			'LocalSettings.php' => $this->configuration[ 'IP' ] . '/LocalSettings.php',
+			'LocalSettings.php' => MW_CONFIG_FILE,
 			'composer.lock' => $this->configuration[ 'IP' ] . '/composer.lock',
 		];
 
